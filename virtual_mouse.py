@@ -28,10 +28,10 @@ def countFingers(image, hand_landmarks, handNo=0):
 	global pinch
 
 	if hand_landmarks:
-        # Obtenha todos os pontos de referência da PRIMEIRA mão VISÍVEL
+        	# Obtenha todos os pontos de referência da PRIMEIRA mão VISÍVEL
 		landmarks = hand_landmarks[handNo].landmark
 
-        # Conte os dedos
+        	# Conte os dedos
 		fingers = []
 
 		for lm_index in tipIds:
@@ -51,7 +51,6 @@ def countFingers(image, hand_landmarks, handNo=0):
 		totalFingers = fingers.count(1)
 
 		# PINÇA
-
 		# Desenhe uma LINHA entre a PONTA DO DEDO e a PONTA DO POLEGAR
 		
 
